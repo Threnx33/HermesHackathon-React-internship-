@@ -1,0 +1,57 @@
+.overlay {
+  height: 25vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3vh 0;
+}
+
+.first_div {
+  height: 100%;
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_mare {
+  min-width: 20%;
+  flex: 50%;
+}
+
+.items {
+  min-width: 10%;
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  padding: 3%;
+  font-size: 19px;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn_signup {
+  background: var(--red);
+  font-size: 19px;
+  padding: 6%;
+  color: white;
+  border-radius: 15%;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn_signup:hover {
+  background-color: hsl(0, 50%, 47%);
+  color: hsl(0, 0%, 80%);
+}
+
+@media (min-width: 769px) {
+  .overlay {
+    margin-top: var(--navbar_size);
+    height: 45vh;
+  }
+}

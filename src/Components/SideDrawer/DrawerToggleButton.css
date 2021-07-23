@@ -1,0 +1,33 @@
+.container {
+  margin: 4px;
+  top: 0;
+  position: absolute;
+  /* box-shadow: 5px 4px 7px grey; */
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+  cursor: pointer;
+  z-index: 50px;
+}
+
+.toggle_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle_button_line {
+  width: 30px;
+  height: 2px;
+  background: var(--red);
+}
