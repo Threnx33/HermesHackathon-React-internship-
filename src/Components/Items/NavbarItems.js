@@ -1,6 +1,6 @@
 import React from "react";
 
-const navbarItems = (props) =>
+const NavbarItems = (props) =>
   props.data.map((val, key) => (
     <li
       key={key}
@@ -8,9 +8,9 @@ const navbarItems = (props) =>
         window.location.pathname = val.link;
       }}
     >
-      <div className="icon">{props.iconite && val.icon}</div>
+      <div className="icon">{props.icons && val.icon}</div>
       <div className="title">{val.title}</div>
     </li>
   ));
 
-export default navbarItems;
+export default NavbarItems;

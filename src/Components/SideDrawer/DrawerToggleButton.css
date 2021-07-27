@@ -2,7 +2,7 @@
   margin: 4px;
   top: 0;
   position: absolute;
-  /* box-shadow: 5px 4px 7px grey; */
+  box-shadow: 5px 4px 7px grey;
   padding: 8px;
   border-radius: 50%;
   border: 2px solid var(--red);
@@ -11,6 +11,7 @@
 }
 
 .toggle_button {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

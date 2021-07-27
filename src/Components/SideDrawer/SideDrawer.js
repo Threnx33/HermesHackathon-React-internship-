@@ -11,7 +11,7 @@ const SideDrawer = (props) => {
   return (
     <nav className={drawerClasses}>
       <ul>
-        <NavbarItems data={NavbarData} iconite={1} />
+        <NavbarItems data={NavbarData} icons={1} />
       </ul>
     </nav>
   );

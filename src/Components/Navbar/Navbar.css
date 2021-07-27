@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: var(--navbar_size);
+  z-index: 50;
 }
 
 .navbar_toggle-button {
@@ -19,8 +20,6 @@
 }
 
 .navbar_logo {
-  /*background-color: white;
-  border-radius: 7px;*/
   margin-left: 1em;
   margin: 5px 0px 5px 0px;
   padding: 2px 2px 0px 3px;

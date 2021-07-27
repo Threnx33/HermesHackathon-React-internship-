@@ -4,9 +4,7 @@ import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { NavbarData } from "../Data/NavbarData";
 import NavbarItems from "../Items/NavbarItems";
 
-//https://res.cloudinary.com/dorint/image/upload/c_scale,w_75/v1626970721/HermesFinal_ahwutx.png
-
-const navbar = (props) => {
+const Navbar = (props) => {
   return (
     <React.Fragment>
       <div className="navbar_toggle-button">
@@ -34,4 +32,4 @@ const navbar = (props) => {
   );
 };
 
-export default navbar;
+export default Navbar;
