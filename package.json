@@ -1,5 +1,4 @@
 {
-  "homepage": "http://Threnx33.github.io/HermesHackathon-React-internship-"
   "name": "intern2",
   "version": "0.1.0",
   "homepage": "http://gitname.github.io/react-gh-pages",
@@ -20,8 +19,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
