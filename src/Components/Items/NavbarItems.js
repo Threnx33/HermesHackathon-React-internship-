@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./NavbarItems.module.css";
 
 const NavbarItems = (props) =>
   props.data.map((val, key) => (
@@ -8,8 +9,8 @@ const NavbarItems = (props) =>
         window.location.pathname = val.link;
       }}
     >
-      <div className="icon">{props.icons && val.icon}</div>
-      <div className="title">{val.title}</div>
+      <div className={styles.icon}>{props.icons && val.icon}</div>
+      <div className={styles.title}>{val.title}</div>
     </li>
   ));
 

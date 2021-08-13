@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { NavbarData } from "../Data/NavbarData";
 import NavbarItems from "../Items/NavbarItems";
@@ -7,12 +7,12 @@ import NavbarItems from "../Items/NavbarItems";
 const Navbar = (props) => {
   return (
     <React.Fragment>
-      <div className="navbar_toggle-button">
+      <div className={styles.navbar_toggle_button}>
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
-      <header className="navbar">
-        <nav className="navbar_navigation">
-          <div className="navbar_logo">
+      <div className={styles.navbar}>
+        <nav className={styles.navbar_navigation}>
+          <div className={styles.navbar_logo}>
             <a href="/">
               <img
                 src="https://res.cloudinary.com/dorint/image/upload/c_scale,w_82/v1627030543/HermesWhiTee_ityapw.png"
@@ -20,14 +20,14 @@ const Navbar = (props) => {
               />
             </a>
           </div>
-          <div className="spacer" />
-          <div className="navbar_navigation-items">
+          <div className={styles.spacer} />
+          <div className={styles.navbar_navigation_items}>
             <ul>
               <NavbarItems data={NavbarData} />
             </ul>
           </div>
         </nav>
-      </header>
+      </div>
     </React.Fragment>
   );
 };

@@ -5,6 +5,7 @@ import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
 import MainView from "./Components/MainView/MainView";
 import Parteners from "./Components/Parteneri/Partners";
+import Register from "./Components/Register/Register";
 
 const App = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -22,6 +23,7 @@ const App = () => {
       <Navbar drawerClickHandler={drawerToggleClickHandler} />
       <SideDrawer show={sideDrawerOpen} />
       {sideDrawerOpen ? <Backdrop click={backdropClickHandler} /> : null}
+      {/* <Register /> */}
       <MainView />
       <Parteners />
     </div>

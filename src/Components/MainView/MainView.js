@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from "react";
-import "./MainView.css";
+import styles from "./MainView.module.css";
 
 const MainView = () => {
   function useWindowSize() {
@@ -21,25 +21,20 @@ const MainView = () => {
   }
 
   const MainViewDesktop = () => (
-    <div className="first_div">
-      <div className="items">
+    <div className={styles.first_div}>
+      <div className={styles.items}>
         <img
-          className="logo_big"
+          className={styles.logo_big}
           src="https://res.cloudinary.com/dorint/image/upload/c_scale,w_400/v1626849856/Untitled_cyt1fm.png"
           alt="Logo Hermes mare"
         />
-        <p className="time">Începem curând</p>
-        <button
-          className="btn_signup"
-          onClick={() => {
-            alert("Esti bagabooont!🌿⚗️");
-          }}
-        >
-          Înscrie-te
-        </button>
+        <div className={styles.items2}>
+          <p className={styles.time}>Începem curând</p>
+          <button className={styles.btn_signup}>Înscrie-te</button>
+        </div>
       </div>
       <img
-        className="image"
+        className={styles.image}
         src="https://res.cloudinary.com/dorint/image/upload/c_scale,h_400/v1627373821/Image_trasparent_g90ds7.png"
         alt="Imagine Hackathon mare"
       />
@@ -47,25 +42,20 @@ const MainView = () => {
   );
 
   const MainViewMobile = () => (
-    <div className="first_div">
+    <div className={styles.first_div}>
       <img
-        className="logo_big flex_item"
+        className={`${styles.logo_big} ${styles.flex_item}`}
         src="https://res.cloudinary.com/dorint/image/upload/c_scale,w_400/v1626849856/Untitled_cyt1fm.png"
         alt="Logo Hermes mare"
       />
       <img
-        className="image flex_item"
+        className={`${styles.image} ${styles.flex_item}`}
         src="https://res.cloudinary.com/dorint/image/upload/c_scale,h_400/v1627373821/Image_trasparent_g90ds7.png"
         alt="Imagine Hackathon mare"
       />
-      <div className="items">
-        <p className="time flex_item">Începem curând</p>
-        <button
-          className="btn_signup flex_item"
-          onClick={() => {
-            alert("Esti bagabooont!🌿⚗️");
-          }}
-        >
+      <div className={styles.items}>
+        <p className={`${styles.time} ${styles.flex_item}`}>Începem curând</p>
+        <button className={`${styles.btn_signup} ${styles.flex_item}`}>
           Înscrie-te
         </button>
       </div>
@@ -74,7 +64,7 @@ const MainView = () => {
 
   return (
     <React.Fragment>
-      <div className="contain">
+      <div className={styles.contain}>
         {ShowWindowDimensions() <= 768 ? MainViewMobile() : MainViewDesktop()}
       </div>
     </React.Fragment>

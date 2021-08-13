@@ -37,14 +37,6 @@
   border-color: hsl(0, 50%, 70%);
 }
 
-.side_drawer .icon {
-  flex: 25%;
-}
-
-.side_drawer .title {
-  flex: 75%;
-}
-
 .side_drawer a {
   color: var(--red);
   text-decoration: none;

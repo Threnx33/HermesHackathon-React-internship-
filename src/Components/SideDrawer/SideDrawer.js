@@ -1,12 +1,12 @@
 import React from "react";
-import "./SideDrawer.css";
+import styles from "./SideDrawer.module.css";
 import { NavbarData } from "../Data/NavbarData";
 import NavbarItems from "../Items/NavbarItems";
 
 const SideDrawer = (props) => {
-  let drawerClasses = "side_drawer";
+  let drawerClasses = `${styles.side_drawer}`;
   if (props.show) {
-    drawerClasses = "side_drawer open";
+    drawerClasses = `${styles.side_drawer} ${styles.open}`;
   }
   return (
     <nav className={drawerClasses}>

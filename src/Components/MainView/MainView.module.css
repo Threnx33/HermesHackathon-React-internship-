@@ -5,7 +5,6 @@
 .contain {
   background: rgba(0, 0, 0, 0.3);
   padding: 5% 0;
-  height: 50%;
   width: 100%;
 }
 
@@ -17,8 +16,8 @@
 }
 
 .image {
-  min-width: 50%;
-  flex: 50%;
+  min-width: 30%;
+  flex: 30%;
 }
 
 .items {
@@ -27,7 +26,12 @@
   flex: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.items2 {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -59,15 +63,14 @@
 }
 
 @media (min-width: 769px) {
-  .overlay {
-    height: 45vh;
-  }
   .contain {
     height: 45vh;
     margin-top: var(--navbar_size);
   }
+
   .logo_big {
-    height: 30%;
+    align-self: center;
+    width: 80%;
   }
   .btn_signup {
     padding: 3%;
@@ -80,7 +83,6 @@
     align-items: center;
   }
   .image {
-    flex: auto;
     width: 80%;
   }
   .items {
@@ -88,7 +90,7 @@
     flex-direction: row;
   }
   .logo_big {
-    width: 60%;
+    width: 50%;
   }
   .btn_signup {
     padding: 2%;

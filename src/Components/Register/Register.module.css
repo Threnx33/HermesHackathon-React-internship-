@@ -1,0 +1,98 @@
+.container {
+  background: var(--red);
+  min-height: 100%;
+  padding-bottom: 8%;
+}
+
+.title {
+  text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.5);
+  padding-top: 10%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+.register_card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  row-gap: 40px;
+  background: white;
+  box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
+  margin: 5% 5%;
+  padding: 5%;
+}
+
+.logo {
+  justify-self: center;
+  max-width: 100%;
+}
+
+.label {
+  margin-bottom: -30px;
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--red);
+}
+
+.field {
+  font-size: 22px;
+  border: 0px;
+  border-bottom: 2px solid var(--red);
+  color: var(--red);
+}
+
+.field:focus {
+  outline: none;
+  border-bottom-color: hsl(14, 81%, 47%);
+}
+
+.button {
+  justify-self: center;
+  font-size: 24px;
+  background: var(--red);
+  color: white;
+  padding: 2%;
+  border-radius: 17%;
+  cursor: pointer;
+  box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover,
+.button:active {
+  background-color: hsl(0, 50%, 47%);
+  color: hsl(0, 0%, 90%);
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding-top: var(--navbar_size);
+    padding-bottom: 2%;
+  }
+  .title {
+    font-size: 52px;
+    padding-top: 3%;
+  }
+  .register_card {
+    row-gap: 60px;
+    margin: 3% 5%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+  }
+  .logo {
+    grid-column: span 2;
+  }
+  .label {
+    font-size: 27px;
+    margin-bottom: -60px;
+  }
+  .field {
+    width: 100%;
+  }
+  .button {
+    grid-column: span 2;
+    padding: 1%;
+  }
+}

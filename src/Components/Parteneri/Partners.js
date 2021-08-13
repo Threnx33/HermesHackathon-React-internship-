@@ -1,13 +1,13 @@
 import React from "react";
-import "./Partners.css";
+import styles from "./Partners.module.css";
 
 const Parteners = () => (
   <React.Fragment>
-    <p className="parteners_title">Parteneri</p>
-    <div className="partners">
-      <span className="partner1 box"></span>
-      <span className="partner2 box"></span>
-      <span className="partner3 box"></span>
+    <p className={styles.parteners_title}>Parteneri</p>
+    <div className={styles.partners}>
+      <span className={`${styles.partner1} ${styles.box}`}></span>
+      <span className={`${styles.partner2} ${styles.box}`}></span>
+      <span className={`${styles.partner3} ${styles.box}`}></span>
     </div>
   </React.Fragment>
 );
