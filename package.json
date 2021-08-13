@@ -1,8 +1,6 @@
 {
   "name": "intern2",
   "version": "0.1.0",
-  "homepage": "http://gitname.github.io/react-gh-pages",
-  "homepage": "http://gitname.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
